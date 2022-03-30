@@ -13,14 +13,14 @@ restaraunt = ['Chic Fil A', 'Taco Bell', 'Chipotle', 'McDonalds', 'Dominos']
 transportation = ['Plane', 'Train', 'Boat', 'Car', 'Walk']
 entertainment = ['Painting', 'Swimming', 'Broadway', 'Dancing', 'Sightsee']
 
-print("Hi! Welcome to Quarantined day trip destinations! Where we plan your trip for you")
+print('Hi! Welcome to Quarantined day trip destinations! Where we plan your trip for you')
 
 print(f'Good News!, Today, {random.choice(destination)} was selected for you!')
 
-answer = input('Does this destination work for you? Please select y/n:')
+answer = input('Does this destination work for you? Please select [y/n]:')
 while answer == 'n':
  random_destination = random.choice(destination)
-print(f"We are so Sorry that location doesn't work for you, let's try again, how about {random.choice(destination)}?")
+print(f'We are so Sorry that location doesnt work, let us try again, how does {random.choice(destination)} Please select [y/n]:')
 answer = input('Does this selection work for you? Please select [y/n]:')
 if answer == 'y':
   print('Perfect! Let us select a restaurant for the day!')
